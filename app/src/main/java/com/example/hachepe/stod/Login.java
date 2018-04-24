@@ -28,12 +28,14 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), Registro.class);
                 startActivity(i);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), HomeActivity.class);
                 startActivity(i);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });
     }

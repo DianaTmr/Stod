@@ -14,19 +14,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        <activity
+            android:name=".FirstActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_first">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Login"/>
         <activity android:name=".Registro" />
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".ChatActivity"></activity>
-        <activity android:name=".AjustesActivity"></activity>
-        <activity android:name=".PerfilActivity"></activity>
-        <activity android:name=".SintomasActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".AjustesActivity" />
+        <activity android:name=".PerfilActivity" />
+        <activity android:name=".SintomasActivity" />
     </application>
 
 </manifest>
