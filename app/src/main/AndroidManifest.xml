@@ -17,7 +17,8 @@
         <activity
             android:name=".FirstActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_first">
+            android:label="@string/title_activity_first"
+            android:theme="@style/stod">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

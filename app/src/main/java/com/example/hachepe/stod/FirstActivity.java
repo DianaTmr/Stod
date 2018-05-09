@@ -22,9 +22,6 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
-
-import com.example.hachepe.stod.Utils.BottomNavigationViewHelper;
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class FirstActivity extends AppCompatActivity {
@@ -46,7 +43,7 @@ public class FirstActivity extends AppCompatActivity {
         cruz = (com.mikhaellopez.circularimageview.CircularImageView) findViewById(R.id.cruz);
         final Animation a = AnimationUtils.loadAnimation(this,
                 R.anim.rotate_animation);
-        a.setDuration(4000);
+        a.setDuration(1000);
         cruz.startAnimation(a);
 
         a.setAnimationListener(new Animation.AnimationListener() {
@@ -60,7 +57,7 @@ public class FirstActivity extends AppCompatActivity {
 
                 Animation fadeIn = new AlphaAnimation(0, 1);
                 fadeIn.setInterpolator(new DecelerateInterpolator()); //add this
-                fadeIn.setDuration(4000);
+                fadeIn.setDuration(1000);
                 btnEmpezar.startAnimation(fadeIn);
                 btnEmpezar.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
